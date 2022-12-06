@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>about-me</title>
 </head>
+
+<!--Top of webpage introducing the profile in the header element-->
 <body>
-    <p> yuoyoyoyoy</p>
-    <p>see if this works out </p>
-    </body>
+    <header id="head">
+        <h1>Hello - REZMAN88's profile</h1>
+    </header>
+
+<!--Navigation bar including photo and sections-->
+<section>
+    <div class = "nav">
+        <div class ="profPic" alt="picture of Rezman88 in shades"></div>
+        <div class = "center">
+        <a href = "#ABOUT">About</a>
+        <a href = "#Projects">Projects</a>
+        <a href = "#Contact">Contact</a>
+    </div>
+</section>
+
+<!--About me-->
+<section class="text">
+    <h2 id="ABOUT">ABOUT</h2>
+        <p>Hi, my name's Rezzman88.
+    I'm on my way down the rabbit hole having taken the red pill in the world of coding.
+Maybe I'm not neo and maybe there is no matrix but I'm determined to understand the world of web development.</p>
+</section>
+
+<!--Projects-->
+<section class="text">
+    <h2 id="Projects">PAST PROJECTS</h2> 
+        <div id="gridContainer" class="textProjects">
+            <div id="proj1" class="projStyles" onclick="window.location='https://rezman88.github.io/Horiseon-Webpage';">
+                <h1>Horiseon project</h1></div>
+            <div id="proj2" class="projStyles">
+                <h1>Boarding</h1></div>
+            <div id="proj3" class="projStyles">
+                <h1>Pizza slice</h1></div>
+            <div id="proj4" class="projStyles">
+                <h1>Surf's up</h1></div>
+        </div>
+</section>
+<!--footer-->
+<div class="footer">
+    <h2 id="Contact">Contact</h2>
+    <div class ="center" id="footerText">
+        <p>Email: Rezman88@me.com</p>
+        <p>Facebook: Rezman88</p>
+        <p>Twitter:Rezman88</p>
+
+</div>
+
+</body>
 </html>

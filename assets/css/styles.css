@@ -1,0 +1,166 @@
+/*Defining the styles for the page*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for the introductory section top of page*/
+#head{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
+    border-style: dashed;
+    border-width: 5px;
+    height:100px;
+}
+
+/* Navigation bar settings including flexbox*/
+.nav{
+    display: flex;
+    background-color: red;
+    font-size: large;
+    height: 100px;
+    margin: 100px;
+    padding: 20px;
+}
+
+/*For the section in the navigation bar*/
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 80%;
+}
+
+/*Profile pic settings*/
+.profPic{
+    display: flex;
+    background: url(../images/prof2.png);
+    height: 130%;
+    width: 40%;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15%;   
+    justify-content: center;
+}
+
+/*Creating a grid for the various projects*/
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "proj1 proj1 proj1"               
+    "proj2 proj3 proj4";
+    min-height: 400px;
+    grid-gap: 10px;
+}
+
+/*Image links, settings for the projects in the flexboxes*/
+#proj1{
+    grid-area:proj1;
+    background-image:url(../images/bowling.jpg);
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#proj2{
+    grid-area:proj2;
+    background-image:url(../images/boarding.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#proj3{
+    grid-area:proj3;
+    background-image:url(../images/pizzaslice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#proj4{
+    grid-area:proj4;
+    background-image:url(../images/surf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Colors, border styles for the projects in the flexboxes*/
+.projStyles{
+    border-style:solid;
+    display: flex;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 10px;
+    justify-content: center;
+
+}
+
+/*Semantic settings for colors, font sizes, positioning*/
+h2{
+    color:rgb(195, 31, 31);
+}
+
+.text{
+    margin: 10%;
+    color:rgb(118, 5, 103);
+}
+
+.textProjects{
+    color:white;
+    font-size: 20px;
+    justify-content: center;
+}
+
+a{
+    color:black;
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Footer details*/
+.footer {
+    display: flex;
+    background-color: red;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    }
+
+.footer h2{
+        color:black;
+}
+
+#footerText{
+    color:white;
+    font-size: small;
+}
+
+/*css responsive viewports: where max screen width is 500px or less screen turns blue*/
+
+@media screen and (max-width: 500px) {
+    body {
+      background-color:blue;
+    }
+  }
+
